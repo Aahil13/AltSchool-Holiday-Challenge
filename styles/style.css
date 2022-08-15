@@ -103,6 +103,15 @@ span {
   color: #fff;
 }
 
+small{
+  display: flex;
+  color: red;
+}
+
+.network-img{
+  width: 30px;
+}
+
 @media (max-width: 500px) {
   form {
     width: 90%;
