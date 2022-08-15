@@ -31,6 +31,6 @@ Users should be able to;
 ** All team members should add their github repo and twitter name in the format below **
 
 - [Aahil's github](https://github.com/Aahil13) || [Aahil's twitter](https://twitter.com/OnyeanunaE)
--
+- [Ebimiefagha's github](https://github.com/Ebimiefagha) || [Ebimiefagha's twitter](https://twitter.com/emmyz01_sax)
 -
 -
