@@ -15,6 +15,9 @@ Users should be able to;
 ## screenshots
 ![phonie](https://user-images.githubusercontent.com/63567230/184676759-e10561a2-b68a-49d5-85ff-6f368d441fe9.JPG)
 
+## Links 
+- Live site - [Phonie](https://Aahil13.github.io/Phonie)
+
 ## How to use
 
 - Fork the Repo
