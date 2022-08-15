@@ -3,6 +3,7 @@
 const input = document.querySelector(".number-input");
 const button = document.querySelector(".btn");
 const nameInput = document.querySelector(".name-text");
+const networkImg = document.querySelector(".network-img");
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
@@ -38,6 +39,7 @@ function detectNumber(phoneNumber) {
             alert(
               `Hurray, ${capitalizedName} your network provider is ${networkName}`
             );
+            networkImg.src = `./img/${networkName}.svg`;
           }
         });
       }
