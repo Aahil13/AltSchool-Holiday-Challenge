@@ -1,39 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   font-family: "poppins", sanserif;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   width: 100%;
-  background-image: url('/img/img_bg.jpg');
+  font-size: 16px;
+  background-image: url("/img/img_bg.jpg");
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-position: center;
   background-size: cover;
 }
 
-body{
+body {
   display: grid;
   align-items: center;
 }
 
-form{
+form {
   width: 50%;
   margin: 0 auto;
 }
 
-h1{
-  font-size: 30px;
+h1 {
+  font-size: 2rem;
   text-align: center;
   color: #fff;
 }
 
-h3{
+h3 {
   text-align: center;
   color: #fff;
   font-weight: light;
@@ -58,8 +60,7 @@ h3{
   transition: .4s;
 } */
 
-
-.title{
+.title {
   margin: 30px auto;
 }
 
@@ -69,32 +70,34 @@ h3{
   margin: -2% 40%;
   background: none;
 } */
-.social-icons ul{
-  display:flex;
-  justify-content: center;
+.social-icons ul {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  justify-content: left;
 }
-.social-icons ul li{
+.social-icons ul li {
   list-style: none;
 }
-.social-icons ul li a{
+.social-icons ul li a {
   /* width: 45px;
 	height: 45px; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* background:  #f9004d; */
-	border-radius: 50%;
-	margin: 10px 20px;
-	/* color: white; */
-	text-decoration: none;
-	font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background:  #f9004d; */
+  border-radius: 50%;
+  margin: 10px 20px;
+  /* color: white; */
+  text-decoration: none;
+  font-size: 20px;
   cursor: pointer;
   color: #111;
 }
 /* .social-icons ul li a:hover{
   transform: scale(20px);
 } */
-.social-icons ul li:nth-child(1) a:hover{
+.social-icons ul li:nth-child(1) a:hover {
   background-color: #111;
   color: #fff;
 }
@@ -108,13 +111,13 @@ h3{
   background-color: #3b5999;
 } */
 
-input{
-  color:#fff;
+input {
+  color: #fff;
 }
-input::placeholder{
-  color:#fff;
+input::placeholder {
+  color: #fff;
 }
-.input-field{
+.input-field {
   width: 100%;
   padding: 10px 0;
   margin: 5px 0;
@@ -123,31 +126,46 @@ input::placeholder{
   border-right: 0;
   border-bottom: 1px solid #fff;
   background: transparent;
-  outline:none;
+  outline: none;
 }
 /* .check-box{
   margin: 9px 10px 30px 0;
 } */
-span{
+span {
   color: #fff;
   /* position: absolute;
   bottom: 101px; */
   font-size: 15px;
 }
-.btn{
+.btn {
   /* width:20%; */
   /* margin: 0 auto; */
-  padding:10px 30px;
+  padding: 10px 30px;
   margin: 20px 0 10px 0;
-  display:block;
+  /* display: block; */
   cursor: pointer;
   /* border-radius: 30px; */
   border: 0;
   outline: 0;
-  background: linear-gradient(to right, #DE781F,#D81FDE);
-  color:#fff;
-  font-size: 15px;
+  background: linear-gradient(to right, #de781f, #d81fde);
+  color: #fff;
+  /* font-size: 15px; */
 }
 
-
-
+@media (max-width: 500px) {
+  form {
+    width: 90%;
+  }
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .btn{
+    padding: .7rem;
+  }
+}
