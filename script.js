@@ -4,6 +4,7 @@
 const input = document.querySelector(".number-input");
 const button = document.querySelector(".btn");
 const nameInput = document.querySelector(".name-text");
+const response = document.querySelector(".reply");
 const networkImg = document.querySelector(".network-img");
 
 ////////////Event that listens to button click
@@ -30,7 +31,6 @@ const prefix = {
   etisalatPrefix: ["0809", "0909", "0817", "0818"],
 };
 
-
 //////////////Triggers when the button is clicked
 function detectNumber(phoneNumber) {
   if (phoneNumber != "") {
@@ -41,10 +41,10 @@ function detectNumber(phoneNumber) {
       function handleValidation(networkProvider, networkName) {
         networkProvider.forEach((e) => {
           if (phoneNumber.substring(0, 4) == e) {
-            alert(
-              `Hurray, ${capitalizedName} your network provider is ${networkName}`
-            );
             networkImg.src = `./img/${networkName}.svg`;
+            response.innerHTML = `${capitalizedName} your network provider is + " "  +  <img src='${networkImg.src}' alt='img' class='network-img'>`;
+          } else {
+            response.innerHTML = `${capitalizedName} your number is invalid. <img src='./img/smile.svg' alt='img' class='network-img'>`;
           }
         });
       }
