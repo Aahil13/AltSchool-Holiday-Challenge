@@ -13,18 +13,19 @@ Users should be able to;
 - View the website in all screen types(Responsive)
 
 ## screenshots
+![phonie](https://user-images.githubusercontent.com/63567230/184676759-e10561a2-b68a-49d5-85ff-6f368d441fe9.JPG)
 
 ## How to use
 
-### Fork the Repo
+- Fork the Repo
 
-### Clone to your local repository
+- Clone to your local repository
 
-### Open the file using live server.
+- Open the file using live server.
 
 ## Acknowlegement
 
-\*\* All team members should add their github repo and twitter name in the format below
+** All team members should add their github repo and twitter name in the format below **
 
 - [Aahil's github](https://github.com/Aahil13) || [Aahil's twitter](https://twitter.com/OnyeanunaE)
 -
