@@ -9,56 +9,42 @@ button.addEventListener("click", (e) => {
   detectNumber(input.value);
 });
 
+const previx = {
+  mtnPrevix: [
+    "0803",
+    "0703",
+    "0903",
+    "0806",
+    "0706",
+    "0813",
+    "0810",
+    "0814",
+    "0816",
+  ],
+  airtelPrevix: ["0802", "0902", "0701", "0808", "0708", "0812"],
+  gloPrevix: ["0805", "0705", "0905", "0807", "0815", "0811", "0905"],
+  etisalatPrevix: ["0809", "0909", "0817", "0818"],
+};
+
 function detectNumber(phoneNumber) {
   if (phoneNumber != "") {
     if (phoneNumber.length > 3) {
-      let previx = phoneNumber.substring(0, 4);
-      const capitalizedName = nameInput.value[0].toUpperCase() + nameInput.value.slice(1);
-      if (
-        previx == "0803" ||
-        previx == "0703" ||
-        previx == "0903" ||
-        previx == "0806" ||
-        previx == "0706" ||
-        previx == "0813" ||
-        previx == "0810" ||
-        previx == "0814" ||
-        previx == "0816"
-      ) {
-        return alert(`Hurray, ${capitalizedName} your network provider is Mtn`);
-      } else if (
-        previx == "0805" ||
-        previx == "0705" ||
-        previx == "0905" ||
-        previx == "0807" ||
-        previx == "0815" ||
-        previx == "0811" ||
-        previx == "0905"
-      ) {
-        return alert(`Hurray, ${capitalizedName} your network provider is Glo`);
-      } else if (
-        previx == "0809" ||
-        previx == "0909" ||
-        previx == "0817" ||
-        previx == "0818"
-      ) {
-        return alert(
-          `Hurray, ${capitalizedName} your network provider is 9Mobile`
-        );
-      } else if (
-        previx == "0802" ||
-        previx == "0902" ||
-        previx == "0701" ||
-        previx == "0808" ||
-        previx == "0708" ||
-        previx == "0812"
-      ) {
-        return alert(
-          `Hurray, ${capitalizedName} your network provider is Airtel`
-        );
-      } else {
-        return alert(`${capitalizedName} please input a valid Nigerian number`);
+      const capitalizedName =
+        nameInput.value[0].toUpperCase() + nameInput.value.slice(1);
+
+      function handleValidation(networkProvider, networkName) {
+        networkProvider.forEach((e) => {
+          if (phoneNumber.substring(0, 4) == e) {
+            alert(
+              `Hurray, ${capitalizedName} your network provider is ${networkName}`
+            );
+          }
+        });
       }
+      handleValidation(previx.airtelPrevix, `Airtel`);
+      handleValidation(previx.gloPrevix, `Glo`);
+      handleValidation(previx.mtnPrevix, `Mtn`);
+      handleValidation(previx.etisalatPrevix, `9mobile`);
     }
   }
 }
