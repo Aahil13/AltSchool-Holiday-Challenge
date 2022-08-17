@@ -32,5 +32,5 @@ Users should be able to;
 
 - [Aahil's github](https://github.com/Aahil13) || [Aahil's twitter](https://twitter.com/OnyeanunaE)
 - [Ebimiefagha's github](https://github.com/Ebimiefagha) || [Ebimiefagha's twitter](https://twitter.com/emmyz01_sax)
--
+- [Marvellous's github](https://github.com/Marvvy1) || [Marvellous's twitter](https://twitter.com/marvvy)
 -
