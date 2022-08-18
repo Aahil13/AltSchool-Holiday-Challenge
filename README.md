@@ -28,9 +28,11 @@ Users should be able to;
 
 ## Acknowlegement
 
-** All team members should add their github repo and twitter name in the format below **
+**Github and twitter links of all team members**
 
 - [Aahil's github](https://github.com/Aahil13) || [Aahil's twitter](https://twitter.com/OnyeanunaE)
 - [Ebimiefagha's github](https://github.com/Ebimiefagha) || [Ebimiefagha's twitter](https://twitter.com/emmyz01_sax)
 - [Marvellous's github](https://github.com/Marvvy1) || [Marvellous's twitter](https://twitter.com/marvvy)
--
+- [Julius's github](https://github.com/Etukakpan) || [Julius's twitter](https://twitter.com/Akwaibom_Demon)
+- [Damilola's github](https://github.com/nikkycrown) || [Damilola's twitter](https://twitter.com/daadnikky13)
+- [Attuah Ubong](https://github.com/adunel001) || [twitter](https://twitter.com/uAttuah)
